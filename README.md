@@ -1,5 +1,5 @@
 # Video Downloader
--- This is a fork of [video-downloader](https://github.com/raycast/extensions/tree/d860cced6e0e70dd08e42ab4b812e98c30ced567/extensions/video-downloader/) --
+> This is a fork of [video-downloader](https://github.com/raycast/extensions/tree/d860cced6e0e70dd08e42ab4b812e98c30ced567/extensions/video-downloader/)
 > Download videos from YouTube, Twitter, Twitch, Instagram, Bilibili and more using yt-dlp CLI
 
 ![video-downloader-1.png](metadata%2Fvideo-downloader-1.png)
@@ -8,7 +8,7 @@
 
 To use this extension, you must have `yt-dlp` and `ffmpeg` installed on your machine.
 
-The easiest way to install this is using [Homebrew](https://brew.sh/). After you have Homebrew installed, run the
+The easiest way to install this is using [Scoop](https://scoop.sh/). After you have Scoop installed, run the
 following command in your terminal:
 
 ```bash
