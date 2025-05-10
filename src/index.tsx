@@ -15,6 +15,9 @@ export default function DownloadVideo() {
   const [error, setError] = useState<string | null>(null);
 
   async function fetchVideoTitle(url: string) {
+    const fetchToast = new Toast({ style: Toast.Style.Animated, title: "Fetching Video Details..." });
+    fetchToast.show();
+
     try {
       const result = await execa(
         ytdlPath,
@@ -57,9 +60,14 @@ export default function DownloadVideo() {
         fileSize: formattedFileSize,
       });
       setError(null);
+      fetchToast.style = Toast.Style.Success;
+      fetchToast.title = "Video Details Fetched";
     } catch (err) {
       setError("Failed to fetch video title. Please check the URL.");
       setVideoDetails(null);
+      fetchToast.style = Toast.Style.Failure;
+      fetchToast.title = "Failed to Fetch Video Details";
+      fetchToast.message = err instanceof Error ? err.message : String(err);
     }
   }
 
