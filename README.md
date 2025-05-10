@@ -11,20 +11,23 @@ To use this extension, you must have `yt-dlp` and `ffmpeg` installed on your mac
 The easiest way to install this is using [Scoop](https://scoop.sh/). After you have Scoop installed, run the
 following command in your terminal:
 
-```bash
-brew install yt-dlp ffmpeg
+```powershell
+scoop install yt-dlp
+```
+```powershell
+scoop install ffmpeg
 ```
 
-Depending on your macOS version, the package might be located in a different path than the one set by the extension. To
+Depending on your Windows version, the package might be located in a different path than the one set by the extension. To
 check where `ffmpeg` was installed, run:
 
-```bash
-which ffmpeg
+```powershell
+where.exe ffmpeg
 ```
 
 Then, update the path in the extension preferences to match the output of the above command.
 
-You'll also need `ffprobe`, which is usually installed with `ffmpeg`. Just run `which ffprobe` and update the path
+You'll also need `ffprobe`, which is usually installed with `ffmpeg`. Just run `where.exe ffprobe` and update the path
 accordingly.
 
 ## Supported Sites
